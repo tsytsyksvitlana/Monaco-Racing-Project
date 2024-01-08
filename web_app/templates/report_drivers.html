@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+{% for driver in drivers %}
+<ul>
+    {% if driver['position'] == 15 %}
+    <li>
+        <p> ------------------------------------------------------------ </p>
+    </li>
+    {% endif %}
+    <li>
+        <p>{{driver['position']}} | {{driver['driver']}} | {{driver['team']}} | {{driver['time']}}</p>
+
+    </li>
+</ul>
+{% endfor %}
+{% endblock %}

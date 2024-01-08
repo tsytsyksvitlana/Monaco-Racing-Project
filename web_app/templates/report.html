@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<div>
+    <h1>All</h1>
+    <a href="{{url_for('my_routes.report_drivers')}}">Get All</a>
+</div>
+{% for driver in codes %}
+    <ul>
+        <li>
+            <h1>{{ driver.name }}</h1>
+            <a href="{{url_for('my_routes.report_drivers')}}?driver_id={{driver.abbr}}">{{driver.abbr}}</a>
+        </li>
+    </ul>
+{% endfor %}
+{% endblock %}

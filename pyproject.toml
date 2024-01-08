@@ -1,0 +1,4 @@
+[tool.isort]
+profile = "black"
+line_length = 80
+known_third_party = ["flask", "sqlalchemy"]

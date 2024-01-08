@@ -1,0 +1,26 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px; 
+    border: 1px solid #023f05;
+    background-color: #4a8e75;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    color:beige;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
